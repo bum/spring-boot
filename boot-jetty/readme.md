@@ -1,0 +1,1 @@
+SpringBoot 2.0.2.RELEASE get error with jetty, change to 2.1.0.BUILD-SNAPSHOT for this project
