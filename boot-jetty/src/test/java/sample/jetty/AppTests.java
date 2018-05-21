@@ -45,7 +45,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-public class SampleJettyApplicationTests {
+public class AppTests {
 
 	@Autowired
 	private TestRestTemplate restTemplate;
