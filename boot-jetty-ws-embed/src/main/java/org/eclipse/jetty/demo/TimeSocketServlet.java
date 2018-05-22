@@ -5,12 +5,11 @@ import javax.servlet.annotation.WebServlet;
 import org.eclipse.jetty.websocket.servlet.WebSocketServlet;
 import org.eclipse.jetty.websocket.servlet.WebSocketServletFactory;
 
+@SuppressWarnings("serial")
 @WebServlet(name = "TimeSocketServlet", urlPatterns = "/time/websocket")
-public class TimeSocketServlet extends WebSocketServlet
-{
-    @Override
-    public void configure(WebSocketServletFactory factory)
-    {
-        factory.register(TimeSocket.class);
-    }
+public class TimeSocketServlet extends WebSocketServlet {
+	@Override
+	public void configure(WebSocketServletFactory factory) {
+		factory.register(TimeSocket.class);
+	}
 }
