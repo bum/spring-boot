@@ -29,7 +29,6 @@ public class EchoWebSocketHandler extends TextWebSocketHandler {
 
 	@Override
 	public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
-		super.afterConnectionClosed(session, status);
 		logger.debug("Closed session in instance " + this);
 	}
 	

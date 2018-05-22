@@ -24,7 +24,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import samples.websocket.jetty.SampleJettyWebSocketsApplication;
+import samples.websocket.jetty.AppStart;
 import samples.websocket.jetty.client.GreetingService;
 import samples.websocket.jetty.client.SimpleClientWebSocketHandler;
 import samples.websocket.jetty.client.SimpleGreetingService;
@@ -49,7 +49,7 @@ import org.springframework.web.socket.client.standard.StandardWebSocketClient;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = { SampleJettyWebSocketsApplication.class,
+@SpringBootTest(classes = { AppStart.class,
 		CustomContainerConfiguration.class }, webEnvironment = WebEnvironment.RANDOM_PORT)
 public class CustomContainerWebSocketsApplicationTests {
 
